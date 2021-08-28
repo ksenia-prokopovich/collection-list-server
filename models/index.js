@@ -2,9 +2,9 @@ const fs = require('fs');
 const path = require('path');
 const Sequelize = require('sequelize');
 
-const sequelize = new Sequelize("collectionsdb", "root", "Ksenia1998", {
+const sequelize = new Sequelize("collectionsdb", "root", "root", {
     dialect: "mysql",
-    host: "localhost",
+    host: "mysql-server",
     port: "3306"
 });
 const db = {};
