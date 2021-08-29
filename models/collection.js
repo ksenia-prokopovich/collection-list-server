@@ -11,11 +11,11 @@ module.exports = (sequelize, Sequelize) => {
             allowNull: true
         },
         description: {
-            type: Sequelize.TEXT('long'),
+            type: Sequelize.TEXT,
             allowNull: true
         },
         image: {
-            type: Sequelize.BLOB,
+            type: Sequelize.TEXT('long'),
             allowNull: true,
         },
         userId: {
