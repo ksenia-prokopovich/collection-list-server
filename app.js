@@ -19,7 +19,7 @@ app.use("/collections/items", itemCollectionsRouter);
 app.use("/collections/items/comments", commentsRouter);
 
 const models = require('./models');
-models.sequelize.sync({force: true})
+models.sequelize.sync({ force: true })
     .then(() => {
         app.listen(8000, function () {
             console.log("Сервер ожидает подключения...");
